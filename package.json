@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:Directory": "node dist/directory/server/server.mjs"
+    "serve:ssr:Directory": "node dist/directory/server/server.mjs",
+    "e2e": "npx cypress open"
   },
   "private": true,
   "dependencies": {
@@ -34,6 +35,7 @@
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
     "autoprefixer": "^10.4.19",
+    "cypress": "^13.9.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

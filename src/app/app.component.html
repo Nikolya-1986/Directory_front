@@ -21,7 +21,7 @@
           </label>
           <input
             type="text"
-            class="w-full p-2 border-2 rounded-sm mt-2"
+            class="name w-full p-2 border-2 rounded-sm mt-2"
             formControlName="name"
             >
         </div>
@@ -73,7 +73,7 @@
         <div class="mt-2">
           <button
             type="submit"
-            class="bg-slate-800 text-white px-4 py-2 rounded-sm w-full"
+            class="btn-added bg-slate-800 text-white px-4 py-2 rounded-sm w-full"
             >
             Save
           </button>
@@ -119,7 +119,7 @@
                   </a>
   
                   <button
-                    class="bg-slate-50 text-dark py-2 px-4 rounded-sm"
+                    class="btn-deleted bg-slate-50 text-dark py-2 px-4 rounded-sm"
                     type="button"
                     (click)="deleteContact(contact.id)"
                     >
@@ -129,7 +129,7 @@
                   </button>
   
                   <button
-                    class="bg-slate-50 text-dark py-2 px-4 rounded-sm"
+                    class="btn-updated bg-slate-50 text-dark py-2 px-4 rounded-sm"
                     type="button"
                     (click)="editContact(contact)"
                     >
