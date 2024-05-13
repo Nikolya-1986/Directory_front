@@ -7,12 +7,11 @@ import { IContact } from './models/interfaces/contact.interface';
 import { ContactService } from './services/contact.service';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AsyncPipe, FormsModule, ReactiveFormsModule, HeaderComponent],
+  imports: [RouterOutlet, AsyncPipe, FormsModule, ReactiveFormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   providers: [ContactService],
